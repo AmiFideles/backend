@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: se.ifmo.ru
+  jpa:
+    hibernate:
+      ddl-auto: 
+  datasource:
+    url: 
+    username: 
+    password: 
+accessTokenSecret: 12345
+refreshTokenSecret: 54321
+accessTokenExpirationMinutes: 1
+refreshTokenExpirationDays: 2
