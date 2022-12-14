@@ -63,6 +63,7 @@ public class AuthController {
     public ResponseEntity<?> signup(@Valid @RequestBody SignUpDto dto) {
         User user = new User(dto.getUsername(),passwordEncoder.encode(dto.getPassword()));
         user.setRole("USER");
+        // TODO вернуть нормальную ошибку, если user уже существует
         userRepository.save(user);
         RefreshToken refreshToken = new RefreshToken();
         refreshToken.setUser(user);

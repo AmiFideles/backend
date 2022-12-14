@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class SwaggerConfiguration {
-    @Value("test")
+    @Value("${spring.application.name}")
     private String applicationName;
 
     @Bean

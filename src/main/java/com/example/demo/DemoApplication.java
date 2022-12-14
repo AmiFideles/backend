@@ -13,7 +13,8 @@ public class DemoApplication {
 	 *  LazyInitializationException
 	 *  csrf cors?
 	 *  привести в порядок web security config
-	 *  рефакторинг
+	 *  рефакторинг сервисов и репозиторий/ Маппинги
+	 *
 	 * **/
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
